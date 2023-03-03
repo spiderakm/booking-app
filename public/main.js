@@ -24,7 +24,7 @@ function showBrowser(show){
    const parentNode=document.querySelector(".ul")
         var childNode=`<li id=${show.id} style="margin-bottom:10px;">${show.name}-${show.email} - ${show.phone}
              <button onclick="deleteProduct('${show.id}')" style="float:right; margin-left:5px;">Delete</button>  
-             <button onclick=editProduct('${show.id}','${show.phone}','${show.name}','${show.email}') style="float:right;">Edit</button>
+
                      </li>`
                      parentNode.innerHTML=parentNode.innerHTML+childNode;     
 }

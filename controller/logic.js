@@ -31,10 +31,7 @@ exports.getmethod = async (req,res,next) => {
 
 exports.deletemethod = async (req,res,next) => {
     try {
-        if(!req.param.id){
-
-        throw new Error ("id is mandatory to delete")
-        }
+        
         const detailsId = req.param.id
         await user.destroy({where : {id:detailsId}})
 
